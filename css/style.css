@@ -512,7 +512,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 13px;
   padding-bottom: 70px;
 }
 
@@ -526,7 +526,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 }
 
 .hotel-info__offer {
@@ -811,14 +811,10 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding: 80px 0 66px 0;
 }
 
-.newsletter:before {
+.newsletter::before {
   content: '';
   position: absolute;
   top: 0;
@@ -832,8 +828,6 @@ template {
 
 .newsletter-wrapper {
   position: relative;
-  max-width: 731px;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,6 +837,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 731px;
+  margin: auto;
 }
 
 .newsletter-title {
