@@ -23,8 +23,7 @@
       min-width: 83px
     &-network
       display: flex
-      align-content: center
-      align-content: start
+      align-items: start
       grid-row: 2 / 4
       grid-column: span 2
   &__contact
@@ -80,12 +79,15 @@
     margin-bottom: 15px
     flex-basis: 48%
   &__message
+    width: 100%
+    height: 123px
     background-color: #fff
     border-radius: 4px
     padding: 18px 23px
     border: none
     flex-basis: 100%
     margin-bottom: 23px
+    resize: none
   &__button
     min-width: 160px
     min-height: 50px
@@ -103,4 +105,23 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
-    color: $footer-text-color
+    color: #e0e0e0
+  &__documents
+    display: grid
+    grid-row: 5
+    grid-column: 2 / 5
+    margin-top: 55px
+    &-wrap
+      display: flex
+      align-items: center
+      justify-content: space-between
+  &__disc
+    display: flex
+    justify-content: space-between
+  &__subfooter
+    padding: 0
+    margin-right: 20px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
