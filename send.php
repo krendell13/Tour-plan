@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$mail = $_POST['mail'];
 
 
 // Формирование самого письма
@@ -16,7 +17,8 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<b>Сообщение:</b><br>$message<br>
+<b>Почта:</b> $mail
 ";
 
 // Настройки PHPMailer
@@ -55,3 +57,4 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
+
