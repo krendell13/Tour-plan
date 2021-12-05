@@ -65,4 +65,8 @@ function closeModal(event) {
   modalDialog.removeClass('modal__dialog--visible');
 }
 
+$(document).on('keydown', function(e) {
+  if (e.keyCode == 27)
+    window.close();
+});
 });
