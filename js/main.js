@@ -69,4 +69,24 @@ $(document).on('keydown', function(e) {
   if (e.keyCode == 27)
     window.close();
 });
+
+//Обработка форм
+$(".form").each(function (){
+  $(this).validate({
+  errorClass: "invalid",
+  messages: {
+    name: {
+      required: "Please enter your name",
+      minlength: "Name must be at least 3 letters",
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+    phone: {
+      required: "Phone is required",
+    }
+  },
+});
+})
 });
