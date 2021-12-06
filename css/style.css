@@ -1365,24 +1365,6 @@ template {
           justify-content: space-between;
 }
 
-.footer__disc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.footer__subfooter {
-  padding: 0;
-  margin-right: 20px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-
 .footer__legal {
   margin-left: 73px;
 }
@@ -1517,6 +1499,7 @@ template {
   }
   .logo {
     width: 132px;
+    cursor: default;
   }
   .navbar-top {
     padding-top: 30px;
@@ -1531,10 +1514,19 @@ template {
   }
   .navbar-menu__link {
     font-size: 12px;
-    line-height: 15px;
+    line-height: 15pxs;
+  }
+  .navbar__user {
+    cursor: default;
   }
   .search__input {
     width: 340px;
+  }
+  .search__button {
+    cursor: default;
+  }
+  .navbar-menu__link {
+    cursor: default;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1554,11 +1546,20 @@ template {
   .hotel-slider {
     width: 100%;
   }
+  .hotel-slider__button {
+    cursor: default;
+  }
   .booking {
     width: 340px;
   }
+  .booking__button {
+    cursor: default;
+  }
   .map {
     width: 340px;
+  }
+  .subscribe__button {
+    cursor: default;
   }
   .reviews {
     padding: 40px 0 41px 0;
@@ -1568,6 +1569,9 @@ template {
   }
   .reviews-slider__item:before, .reviews-slider__item:after {
     display: none;
+  }
+  .reviews-slider__button {
+    cursor: default;
   }
   .reviews__title {
     margin-bottom: 50px;
@@ -1582,6 +1586,9 @@ template {
   .card {
     width: 340px;
     height: 250px;
+  }
+  .card__button {
+    cursor: default;
   }
   .footer-wrapper {
     -ms-grid-columns: repeat 6, 1fr;
@@ -1629,8 +1636,20 @@ template {
     -ms-grid-row: 4;
     grid-row: 4;
   }
+  .footer__legal {
+    margin-left: 0;
+  }
+  .footer-link {
+    cursor: default;
+  }
+  .footer__button {
+    cursor: default;
+  }
   .modal__dialog {
     width: 60%;
+  }
+  .menu-button {
+    cursor: default;
   }
 }
 
