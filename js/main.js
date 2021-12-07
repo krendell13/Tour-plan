@@ -81,7 +81,7 @@ $(".form").each(function (){
     },
     email: {
       required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com",
+      email: "Email must be in the format of name@mail.com",
     },
     phone: {
       required: "Phone is required",
@@ -89,4 +89,8 @@ $(".form").each(function (){
   },
 });
 })
+
+$(document).ready(function(){
+  $('.phone').mask('(000) 000-0000');
+});
 });

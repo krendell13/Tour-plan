@@ -1369,6 +1369,10 @@ template {
   margin-left: 73px;
 }
 
+.footer .invalid {
+  color: #EC1F46;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
