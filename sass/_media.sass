@@ -126,6 +126,22 @@
       cursor: default
     &__button
       cursor: default
+    &__bottom
+      display: grid
+      grid-row: 5
+      grid-column: 1 / 5
+    &__subfooter
+      margin-left: 0
+    &__req
+      display: grid
+      grid-row: 5
+      grid-column: 5
+      margin-top: 23px
+      margin-left: 125px
+      width: 136px
+      height: 22px
+    &__general
+      margin-top: 10px
   .modal
     &__dialog
       width: 60%
@@ -139,6 +155,21 @@
     &__info
       order: -1
       margin-bottom: 10px
+  .footer
+    &__bottom
+      display: grid
+      grid-row: 5
+      grid-column: span 1 span 3
+    &__subfooter
+      margin-left: 0
+    &__req
+      display: grid
+      grid-row: 5
+      grid-column: 5
+      margin-top: 23px
+      margin-left: 125px
+      width: 136px
+      height: 22px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -369,11 +400,31 @@
       margin-bottom: 15px
     &__title
       margin-bottom: 20px
+    &__bottom
+      display: grid
+      grid-row: 5
+      grid-column: span 1 span 3
+    &__subfooter
+      margin-left: 0
+    &__req
+      display: grid
+      grid-row: 8
+      grid-column: 1
+      margin-top: 70px
+      margin-left: 0
+      width: 136px
+      height: 22px
+    &__general
+      margin-top: 0
+    &__bottom
+      grid-row: 8
+      grid-column: 1
+    &__connect
+      margin-right: 20px
   .modal
     &__dialog
       width: 80%
       border-radius: 8px
-
 @media (max-width: 320px)
   .navbar
     &-top
